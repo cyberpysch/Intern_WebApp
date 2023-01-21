@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block body %}
+<!--slider-->
+<div class="container my-1">
+    <div id="carouselExampleCaptions" class="carousel slide
+        carousel-fade "
+        data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/pic1.jpg" class="d-block w-100"
+                    breadth="1400" height="400" alt="Error...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Want Cricket updates...?</h5>
+                    <p>We got You! This is the place where you got everything
+                        you want...!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/pic2.jpg" class="d-block w-100"
+                    breadth="1400" height="400" alt="Error...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Want Cricket updates...?</h5>
+                    <p>We got You! This is the place where you got everything
+                        you want...!.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/pic3.jpg" class="d-block w-100"
+                    breadth="1400" height="400" alt="Error...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Want Cricket updates...?</h5>
+                    <p>We got You! This is the place where you got everything
+                        you want...!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!--divider-->
+<div class="container">
+    <hr class="featurette-divider">
+</div>
+<!--crd-->
+<div class="container">
+    <!--card_1-->
+    <div class="cntainer">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">First
+                    featurette Cricket match. <span class="text-muted">It’ll
+                        blow your mind.</span></h2>
+                <p class="lead">Some great placeholder content for the
+                    first featurette here. Imagine some exciting prose
+                    here.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg
+                    featurette-image img-fluid mx-auto" width="500"
+                    height="500"
+                    src="/static/img/match11.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <!--divider-->
+    <hr class="featurette-divider">
+    <!--card_2-->
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Oh yeah,
+                    it’s that good. <span class="text-muted">See for
+                        yourself.</span></h2>
+                <p class="lead">Another featurette? Of course. More
+                    placeholder content here to give you an idea of how
+                    this layout would work with some actual real-world
+                    content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg
+                    featurette-image img-fluid mx-auto" width="500"
+                    height="500"
+                    src="/static/img/match14.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
